@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@headlessui/react": "^1.4.2",
+        "@inertiajs/react": "^1.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-react": "^4.2.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0.0",
+        "postcss": "^8.4.31",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^3.2.1",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "@coreui/coreui": "^5.0.2",
+        "@coreui/react": "^5.1.0",
+        "@fortawesome/free-solid-svg-icons": "^6.6.0",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "@splidejs/react-splide": "github:splidejs/react-splide",
+        "bootstrap": "^5.3.3",
+        "mdb-react-ui-kit": "^8.0.0",
+        "react-bootstrap": "^2.10.4",
+        "react-icons": "^5.2.1",
+        "react-slick": "^0.30.2",
+        "slick-carousel": "^1.8.1"
+    }
+}

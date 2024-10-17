@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this CSS */
+
+
+#root {
+  flex-grow: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}

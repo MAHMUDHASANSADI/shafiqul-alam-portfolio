@@ -1,0 +1,10 @@
+.me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-weight: 900;
+}
