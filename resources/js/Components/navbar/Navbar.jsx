@@ -26,7 +26,7 @@ function Navsec() {
                     <Link href={route('achivement')} className='nav-link'>Achivement</Link>
                     <Link href={route('degree')} className='nav-link'>Honorary Degree</Link>
                     <Link href={route('recognition')} className='nav-link'>Experiences</Link>
-                    <Link href={route('miscellaneous')} className='nav-link'>Miscellaneous</Link>
+                    {/* <Link href={route('miscellaneous')} className='nav-link'>Miscellaneous</Link> */}
             </NavDropdown>
             <NavDropdown title="My Video" >
             <a href="https://www.youtube.com/@Bizz.Solutions" className='nav-link' target='blank'> Youtube</a>

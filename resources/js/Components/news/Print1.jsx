@@ -22,55 +22,55 @@ const Print1 = () => {
       <td><a href="">for impressive business activity</a></td>
     </tr>
     <tr>
-      <td>18th April 2022</td>
-      <td>News 24</td>
+      <td>  <a href="">18th April 2022</a> </td>
+      <td> <a href="">News 24</a> </td>
       <td>all kind of govt training</td>
     </tr>
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td> <a href="">20th January 2024</a> </td>
+      <td> <a href="">Channel i</a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td> <a href="">20th January 2024</a></td>
+      <td><a href="">Channel i </a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td><a href="">20th January 2024</a> </td>
+      <td> <a href="">Channel i</a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td><a href="">20th January 2024 </a></td>
+      <td><a href="">Channel i </a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td> <a href="">20th January 2024</a></td>
+      <td> <a href="">Channel i</a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td><a href="">20th January 2024 </a></td>
+      <td><a href="">Channel i</a> </td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td> <a href="">20th January 2024</a></td>
+      <td><a href="">Channel i </a></td>
       <td>Tech award for IT sector</td>
     </tr>
 
     <tr>
-      <td>20th January 2024</td>
-      <td>Channel i</td>
+      <td><a href="">20th January 2024</a> </td>
+      <td><a href="">Channel i</a> </td>
       <td>Tech award for IT sector</td>
     </tr>
   </tbody>
