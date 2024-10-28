@@ -1,0 +1,1 @@
+import{j as o,Y as r}from"./app-D4w2LTYd.js";import{N as s}from"./Navbar-BUZCUVSp.js";import{T as t,F as e}from"./Footer-xVWwGHNS.js";import{B as m}from"./Blog-DwFEJB9X.js";import"./index-DiT7gi1a.js";const n=()=>o.jsxs(o.Fragment,{children:[o.jsx(r,{title:"Blog"}),o.jsx(t,{}),o.jsx(s,{}),o.jsx(m,{}),o.jsx(e,{})]});export{n as default};

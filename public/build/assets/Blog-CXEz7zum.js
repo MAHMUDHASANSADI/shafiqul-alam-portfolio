@@ -1,1 +1,0 @@
-import{j as o,Y as s}from"./app-Bt4wIXIe.js";import{N as r}from"./Navbar-IHAet2n2.js";import{T as t,F as e}from"./Footer-BbuEFSt0.js";import{B as i}from"./Blog-Ci6i4n5E.js";const j=()=>o.jsxs(o.Fragment,{children:[o.jsx(s,{title:"Recognition"}),o.jsx(t,{}),o.jsx(r,{}),o.jsx(i,{}),o.jsx(e,{})]});export{j as default};

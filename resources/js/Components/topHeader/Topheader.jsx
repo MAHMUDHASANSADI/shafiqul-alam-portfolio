@@ -8,8 +8,8 @@ const Topheader = () => {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <ul className="contact_detail list_none ">
-                  <li><a href="#"><i className="ti-mobile"></i>+88 01777717481</a></li>
-                  <li><a href="#"><i className="ti-email"></i>shafiq.cfobd@gmail.com</a></li>
+                  <li><a href="#"><i className="ti-mobile"></i> +88 01777717481</a></li>
+                  <li><a href="#"><i className="ti-email"></i> shafiq.cfobd@gmail.com</a></li>
                 </ul>
               </div>
               <div className="col-md-6">

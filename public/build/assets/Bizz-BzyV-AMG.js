@@ -1,0 +1,1 @@
+import{j as o,Y as r}from"./app-D4w2LTYd.js";import{N as s}from"./Navbar-BUZCUVSp.js";import{T as t,F as i}from"./Footer-xVWwGHNS.js";import{B as m}from"./Bizz-DMQYcvNQ.js";import"./index-DiT7gi1a.js";/* empty css                 */const z=()=>o.jsxs(o.Fragment,{children:[o.jsx(r,{title:"BizzSolutionPlc"}),o.jsx(t,{}),o.jsx(s,{}),o.jsx(m,{}),o.jsx(i,{})]});export{z as default};
