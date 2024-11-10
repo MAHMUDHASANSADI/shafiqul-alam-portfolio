@@ -12,7 +12,7 @@ import Contact from '../../Components/contact/Contact'
 //import Newsletter from '../../Components/newslwtter/Newsletter'
 import Footer from '../../Components/footer/Footer'
 import { Head } from '@inertiajs/react'
-import Banner from '@/Components/banner/Banner'
+import Sliders from '@/Components/banner/Banner'
 import Navbar from '@/Components/navbar/Navbar'
 import Topheader from '@/Components/topHeader/Topheader'
 
@@ -26,7 +26,7 @@ function Index() {
        />
        <Topheader />
        <Navbar />
-      <Banner />
+      <Sliders />
       <Feature />
       <Course />
       {/* <Event /> */}
