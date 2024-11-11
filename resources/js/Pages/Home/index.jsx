@@ -1,7 +1,7 @@
 import React from 'react'
 // import Loader from '../../Components/loader/Loader'
 
-import { Feature } from '../../Components/feature/Feature'
+import Hero from '../../Components/feature/Feature'
 import Course from '../../Components/course/Course'
 import Event from '../../Components/event/Event'
 import Gallery from '../../Components/gallery/Gallery'
@@ -20,21 +20,21 @@ import Topheader from '@/Components/topHeader/Topheader'
 function Index() {
   return (
     <>
-       <Head
+        <Head
        
        title='Home'
        />
-       <Topheader />
-       <Navbar />
-      <Sliders />
-      <Feature />
-      <Course />
+        <Topheader />
+        <Navbar />
+        <Sliders />
+        <Hero />
+        <Course />
       {/* <Event /> */}
-      <Gallery />
+        <Gallery />
       {/* <Testimonial /> */}
-      <Blog />
-      <Contact />
-      <Footer />
+        <Blog />
+        <Contact />
+        <Footer />
     </>
   )
 }

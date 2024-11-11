@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+import { mainPath } from './helper';
+
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api',
+    baseURL: `${mainPath}/api`,
 });
 
 export default api;

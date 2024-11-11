@@ -1,7 +1,30 @@
 import React from 'react'
+import { useInternalLink } from '@/utils/helper';
+import { useEffect, useState } from 'react';
+import api from '@/utils/axiosConfig';
+import '../../../css/frontendasset/css/style.css';
+function Hero() {
+    const [heroes, setHeroes] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-export const Feature = () => {
-  return (
+    useEffect(() => {
+      api.get('/hero')
+      .then((response) => {
+        setHeroes(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log('Error fetching slider', error);
+        setLoading(false);
+      });
+    }, []);
+
+    if (loading) {
+      return <p>Loading....</p>;
+    }
+
+
+    return (
     <>
     <section className="staggered-animation-wrap">
     <div className="container">
@@ -17,19 +40,25 @@ export const Feature = () => {
             </div>
         </div>
         <div className="row">
-            <div className="col-lg-4 col-md-6">
+            {heroes.map((hero) => (
+            <div className="col-lg-4 col-md-6" >
                 <div className="icon_box text-center bg_danger text_white icon_box_style3 box_shadow2 radius_all_10 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
                 	<div className="box_icon bg-white mb-3">
                 		<i className="fa fa-book text_danger"></i>
+                        <img src="{useInternalLink(hero?.image)}" alt="{`Heroes ${hero.id}`}"  />
+
                     </div>
                     <div className="intro_desc">
-                        <h5>Books & Library</h5>
-                        <p>Browse a diverse selection of books in the 'Books & Library' cart, offering everything from classic literature to academic resources. Whether you're seeking knowledge or a good read, find the perfect addition to your personal library
+                        <h5 key={hero.id}>{hero.title}</h5>
+                        <p key={hero.id}>{hero.description}
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            ))}
+
+            
+            {/* <div className="col-lg-4 col-md-6">
             	<div className="icon_box text-center bg_blue2 text_white icon_box_style3 box_shadow2 radius_all_10 animation" data-animation="fadeInUp" data-animation-delay="0.03s">
                 	<div className="box_icon bg-white mb-3">
                         <i className="fa fa-graduation-cap text_blue2"></i>
@@ -83,10 +112,10 @@ export const Feature = () => {
                         <p>Elevate your career with the 'CA Professional' cart, featuring specialized resources, courses, and support tailored for Chartered Accountants. Whether you're preparing for exams or seeking to enhance your skills, find everything you need to excel in your profession</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
-    <div className="ol_shape20">
+    {/* <div className="ol_shape20">
         <div className="staggered-animation" data-animation="bounceInDown" data-animation-delay="0.1s">
             <img data-parallax='{"y": -30, "smoothness": 20}' src="assets/images/shape20.png" alt="shape20"/>
         </div>
@@ -130,8 +159,9 @@ export const Feature = () => {
         <div className="staggered-animation" data-animation="bounceInLeft" data-animation-delay="0.7s">
             <img data-parallax='{"y": -30, "smoothness": 20}' src="assets/images/shape28.png" alt="shape28"/>
         </div>
-    </div>
+    </div> */}
 </section> 
     </>
   )
 }
+export default Hero;

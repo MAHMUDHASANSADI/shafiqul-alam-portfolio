@@ -1,51 +1,45 @@
-import { useEffect,useState } from 'react';
+import { useInternalLink } from '@/utils/helper';
+import { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import api from '@/utils/axiosConfig';
+import '../../../css/frontendasset/css/style.css';
+import './banner.module.css';
 
 function Sliders() {
     const [sliders, setSliders] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(()=>{
+    useEffect(() => {
       api.get('/slider')
-      .then((response)=>{
-        setGalleries(response.data);
+      .then((response) => {
+        setSliders(response.data);
         setLoading(false);
       })
-      .catch((error)=>{
-        console.log('Error fetching slider',error);
-        setLoading(false)
-      })
-    },[]);
-    if (loading)
-    {
-      return <p>Loading....</p>
+      .catch((error) => {
+        console.log('Error fetching slider', error);
+        setLoading(false);
+      });
+    }, []);
+
+    if (loading) {
+      return <p>Loading....</p>;
     }
 
-
-
-  return (
-    <Carousel data-bs-theme="dark">
-    <Carousel.Item>
+    return (
+      <Carousel data-bs-theme="dark">
         {sliders.map((slider) => (
-          <img key={slider.id} src={`http://127.0.0.1:8000/${slider.image}`} alt={`Slider ${slider.id}`} />
+          <Carousel.Item key={slider.id}>
+            <div className="carousel-image-wrapper">
+              <img
+                src={useInternalLink(slider?.image)}
+                alt={`Slider ${slider.id}`}
+                className="carousel-image"
+              />
+            </div>
+          </Carousel.Item>
         ))}
-    </Carousel.Item>
-    {/* <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="assets/images/banner7.jpg"
-        alt="Second slide"
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="assets/images/banner8.jpg"
-        alt="Third slide"
-      />
-    </Carousel.Item> */}
-  </Carousel>
-  );
+      </Carousel>
+    );
 }
 
 export default Sliders;
