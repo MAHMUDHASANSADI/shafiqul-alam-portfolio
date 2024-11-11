@@ -43,9 +43,9 @@ function Hero() {
             {heroes.map((hero) => (
             <div className="col-lg-4 col-md-6" >
                 <div className="icon_box text-center bg_danger text_white icon_box_style3 box_shadow2 radius_all_10 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                	<div className="box_icon bg-white mb-3">
-                		<i className="fa fa-book text_danger"></i>
-                        <img src="{useInternalLink(hero?.image)}" alt="{`Heroes ${hero.id}`}"  />
+                	<div className="box_icon bg-white mb-3" key={hero.id}>
+                		{/* <i className="fa fa-book text_danger"></i> */}
+                        <img src={useInternalLink(hero?.image)} alt={`Heroes ${hero.id}`}  />
 
                     </div>
                     <div className="intro_desc">

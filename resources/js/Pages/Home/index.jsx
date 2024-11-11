@@ -2,7 +2,7 @@ import React from 'react'
 // import Loader from '../../Components/loader/Loader'
 
 import Hero from '../../Components/feature/Feature'
-import Course from '../../Components/course/Course'
+import Program from '../../Components/course/Course'
 import Event from '../../Components/event/Event'
 import Gallery from '../../Components/gallery/Gallery'
 import Counter from '../../Components/counter/Counter'
@@ -28,7 +28,7 @@ function Index() {
         <Navbar />
         <Sliders />
         <Hero />
-        <Course />
+        <Program />
       {/* <Event /> */}
         <Gallery />
       {/* <Testimonial /> */}
