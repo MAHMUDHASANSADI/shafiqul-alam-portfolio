@@ -53,7 +53,7 @@ function Program() {
                             
                                 <div className="content_footer justify-content-end" >
                                     <div className="price"  >
-                                        <span className="alert alert-success" key={program.id}>{program.price}</span>
+                                        <span className="alert alert-success" key={program.id}>BDT-{program.price}</span>
                                     </div>
                                 </div>
                             </div>
