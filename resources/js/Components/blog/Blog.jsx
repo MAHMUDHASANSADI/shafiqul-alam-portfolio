@@ -49,13 +49,13 @@ function Blog() {
                   </a>
                 </div>
                 <div className="blog_content bg-white">
-                  <h6 className="blog_title"><a href="#">President Award</a></h6>
-                  <p>Chairman, Bizz Solutions Plc got 2021 tech president award</p>
+                  <h6 className="blog_title" key={news.id}><a href="#">{news.title}</a></h6>
+                  <p key={news.id}>{news.description}</p>
                   <a href="https://www.tbsnews.net/economy/corporates/bizz-solutions-wins-presidents-industrial-award-858906" className="text-capitalize">Read More</a>
                 </div>
                 <div className="blog_footer bg-white radius_lbrb_10">
                   <ul className="list_none blog_meta">
-                    <li><a href="https://www.tbsnews.net/economy/corporates/bizz-solutions-wins-presidents-industrial-award-858906"><i className="ion-calendar"></i>24 May, 2024</a></li>
+                    <li><a href="https://www.tbsnews.net/economy/corporates/bizz-solutions-wins-presidents-industrial-award-858906" key={news.id}><i className="ion-calendar"></i>{news.date}</a></li>
                   </ul>
                 </div>
               </div>
