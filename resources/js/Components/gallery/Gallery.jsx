@@ -35,7 +35,7 @@ function Gallery() {
                         <div className="heading_s1 text-center">
                         <h2 className="font_style1">Our Gallery</h2>
                     </div>
-                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                    <p>Explore our creative journey through the visual stories in our gallery. Here, we showcase highlights from projects, events, and creative moments that reflect our dedication to excellence and innovation. Each image captures unique insights into our work process, culture, and collaborations, illustrating how we bring ideas to life. Dive in to see the artistry and passion that fuel our projects and inspire our team every day.</p>
                     <div className="small_divider"></div>
                 </div>
             </div>
