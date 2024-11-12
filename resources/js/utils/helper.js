@@ -1,5 +1,5 @@
- export const mainPath = 'http://127.0.0.1:8000';
-//export const mainPath = 'https://bizzsol.com.bd'
+ //export const mainPath = 'http://127.0.0.1:8000';
+  export const mainPath = 'https://shafiqulalama-admin.bizzsol.dev'
 
 // export function errorMessage(error) {
 //     Notify("error", error?.message)

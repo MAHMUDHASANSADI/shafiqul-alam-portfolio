@@ -1,0 +1,1 @@
+import{j as o,Y as r}from"./app-BJk4LjAa.js";import{N as s}from"./Navbar-DWTE3mK-.js";import{T as t,F as e}from"./Footer-B8qIBaPA.js";import{B as m}from"./Blog-e57iObUq.js";import"./index-H2C5DHGT.js";import"./axiosConfig-D7Nn7qzw.js";const f=()=>o.jsxs(o.Fragment,{children:[o.jsx(r,{title:"Blog"}),o.jsx(t,{}),o.jsx(s,{}),o.jsx(m,{}),o.jsx(e,{})]});export{f as default};

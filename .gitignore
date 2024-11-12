@@ -7,7 +7,6 @@
 # /public/build
 /vendor
 
-
 .env
 .env.backup
 .env.production
@@ -20,3 +19,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+*.zip
+composer.lock
+package-lock.json
