@@ -7,13 +7,13 @@
         <title inertia>{{ config('app.name', 'MD.SHAFIQUL ALAM') }}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="Anil z" name="author">
+        <meta content="Anil z" name="bizzsol.com.bd">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Eduglobal - Education & Courses HTML Template">
-        <meta name="keywords" content="academy, course, education, elearning, learning, education html template, university template, college template, school template, online education template, tution center template">
+        <meta name="description" content="Md. Shafiqul Alam">
+        <meta name="keywords" content="portfolio">
         
         <!-- SITE TITLE -->
-        <title inertia>{{ config('app.name', 'Md. Shafiqul Alam') }}</title>
+        <!-- <title inertia>{{ config('app.name', 'Md. Shafiqul Alam') }}</title> -->
         <!-- Favicon Icon -->
         {{-- <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}"> --}}
         <!-- Google Font -->
