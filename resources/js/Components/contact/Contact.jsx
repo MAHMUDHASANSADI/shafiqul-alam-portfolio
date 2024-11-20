@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '@/utils/axiosConfig';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,18 +17,20 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/contact', formData); // Adjust the URL as per your API endpoint
-      if (response.status === 200) {
-        setAlertMsg('Your message has been sent successfully!');
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        const response = await api.post('/contact-us', formData); // Adjust the URL as per your API endpoint
+        //console.log(response);
+        if (response.status === 200) {
+        setAlertMsg(response.data.message);
+            setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+            
       } else {
-        setAlertMsg('Something went wrong. Please try again.');
+          setAlertMsg(response.data.message);
       }
     } catch (error) {
-      setAlertMsg('An error occurred. Please try again.');
+        setAlertMsg(error.response.data.errors[0]);
     }
   };
 
