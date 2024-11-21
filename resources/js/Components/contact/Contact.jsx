@@ -20,7 +20,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await api.post('/contact-us', formData); // Adjust the URL as per your API endpoint
+        const response = await api.post('/contact-us', formData); 
         //console.log(response);
         if (response.status === 200) {
         setAlertMsg(response.data.message);
@@ -124,7 +124,7 @@ const Contact = () => {
                         </button>
                       </div>
                       <div className="col-lg-12 text-center">
-                        <div id="alert-msg" className="alert-msg text-center">
+                        <div id="alert-msg" className="alert-msg text-center text-danger">
                           {alertMsg}
                         </div>
                       </div>
